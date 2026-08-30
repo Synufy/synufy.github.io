@@ -11,14 +11,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-color: #1a1a1a;
   color: #fff;
   font-family: sans-serif;
-  padding: 40px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wrapper {
   max-width: 800px;
   margin: 0 auto;
-  line-height: 1.6;
 }
 .logo-container {
   display: flex;
@@ -54,8 +59,10 @@ body {
 </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="../images/Toun/logo.png" alt="Toun" class="logo">
+  <div class="wrapper">
+    <div class="logo-container">
+      <img src="../images/Toun/logo.png" alt="Toun" class="logo">
+    </div>
   </div>
   <a href="../index.html" class="back-button">Назад</a>
 </body>
